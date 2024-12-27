@@ -1,0 +1,45 @@
+body.inventaire-body {
+    background-color: black;
+    color: white;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    height: 60px; /* Augmenté pour contenir le titre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+main.container {
+    max-width: 1000px;
+    margin: 60px auto 0 auto; /* Espace égal à la hauteur du header */
+    padding: 20px;
+    margin-top: 300px; /* Espace égal à la hauteur du header + 20px */
+    box-sizing: border-box;
+}
+
+.inventaire {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.inventaire .carte {
+    width: 100%;
+    display: block;
+}
